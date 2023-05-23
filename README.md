@@ -1,0 +1,2 @@
+# JSTest
+JavaScript Injection Test
