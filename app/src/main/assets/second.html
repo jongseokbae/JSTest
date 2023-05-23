@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+                window.CloseWebView = function () {
+                   Android.runNativeCodeToCloseWebView();
+                };
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Close WebView From JS" onClick="CloseWebView()" />
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+                window.OpAppGetAccessToken = function () {
+                  // <access token> 部分には、iOS/Android のネイティブコードからアクセストークン文字列を埋め込む。
+                  myVar = Android.getFromAndroid();
+                  document.getElementById('text_value').innerHTML = myVar;
+                  return "<access token>";
+                };
+
+                function callFromNative(value) {
+                    var element = document.getElementById("asynchronusResult");
+                    element.value = value;
+                }
+        </script>
+    </head>
+    <body>
+        <p id="text_value">Show Value</p>
+        <input type="button" value="Get from android" onClick="OpAppGetAccessToken()" />
+    </body>
+</html>
