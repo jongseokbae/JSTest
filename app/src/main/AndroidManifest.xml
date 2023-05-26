@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".WebViewActivity" />
         <activity android:name=".CloseWebViewActivity" />
+        <activity android:name=".StartFunctionWebViewActivity" />
+        <activity android:name=".DomainConstraintsWebViewActivity" />
     </application>
 
 </manifest>
