@@ -20,9 +20,14 @@ class MainActivity : AppCompatActivity() {
             btnInject.setOnClickListener {
                 startActivity(Intent(applicationContext, WebViewActivity::class.java))
             }
-
             btnClose.setOnClickListener {
                 startActivity(Intent(applicationContext, CloseWebViewActivity::class.java))
+            }
+            btnStart.setOnClickListener {
+                startActivity(Intent(applicationContext, StartFunctionWebViewActivity::class.java))
+            }
+            btnDomain.setOnClickListener {
+                startActivity(Intent(applicationContext, DomainConstraintsWebViewActivity::class.java))
             }
         }
     }
